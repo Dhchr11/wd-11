@@ -1,0 +1,11 @@
+.a{
+    background-color: lightblue;
+    padding: 20px;
+}
+button{
+    background-color:white;
+    transform: translatex(60px);
+}
+button:hover{
+    background-color: blue;
+}

@@ -1,0 +1,18 @@
+CSS Selectors & Styling 
+ 1.What is a CSS selector? Provide examples of element, class, and ID selectors.
+-
+A CSS selector is a pattern used to select and style HTML elements. It tells the browser which elements to target with specific styles defined in CSS. There are 9 types of selector:
+1. Universal Selector
+ 2.Element Selector
+ 3. Class Selector
+4.Id selector
+5.group selector
+6.Descendant Selector
+7.Child Selector
+8.Adjacent Sibling Selector
+9.General Sibling Selector
+
+
+
+
+ 
