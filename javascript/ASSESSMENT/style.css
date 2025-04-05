@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+.i{
+    height:74% ;
+    width:1000px;
+}
+.j{
+    height:100px;
+    width: 150px;
+}
+.slider{
+    background-color: rgb(13, 13, 13);
+    width:80%;
+    margin: 0px auto;
+    }
+.j {
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+ .j:hover {
+    border: 2px solid white;
+}
+.thumbnail{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+.n{
+    color: white;
+  
+}
+.b{
+    color:white;
+
+}
+

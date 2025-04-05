@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="slider">
+   <div class="image">
+    <img class="i"   id="i" src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743487489176_gunsroseswebcreative.jpg">
+   </div>
+  
+   <div class="thumbnail" id="thumbnail">
+    <div class="back">
+        <i class="fa-solid fa-arrow-left b"></i>
+    </div>
+    <div class="t">
+    <img class="j" src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743487489176_gunsroseswebcreative.jpg">
+</div>
+<div class="t">
+    <img class="j" src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743598360894_theindianoceanlivewavesofsoundwebbanner.jpg">
+</div>
+<div class="t">
+    <img class="j" src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1726036566435_playcardnewweb.jpg" >
+</div>
+<div class="t">
+    <img class="j" src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743140000771_02bookmyshowwebappbanners2.jpg" alt="">
+</div>
+<div class="t">
+    <img class="j"src="https://assets-in-gm.bmscdn.com/promotions/cms/creatives/1743487489176_gunsroseswebcreative.jpg">
+</div>
+<div class="next">
+    <i class="fa-solid fa-arrow-right n"></i>
+</div>
+</div>
+</div>
+<script>
+    
+    const thumbnails = document.querySelectorAll('.j');
+    const mainImage = document.getElementById('i');
+    const thumbnailContainer = document.getElementById('thumbnail');
+
+    const nextBtn = document.querySelector('.next');
+    const backBtn = document.querySelector('.back');
+
+    let scrollAmount = 0;
+    const scrollStep = 200;
+
+    // Click on thumbnail to change main image
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            mainImage.src = thumbnail.src;
+        });
+    });
+
+    
+    nextBtn.addEventListener('click', () => {
+        thumbnailContainer.scrollBy({
+            left: scrollStep,
+            behavior: 'smooth'
+        });
+    });
+
+    
+    backBtn.addEventListener('click', () => {
+        thumbnailContainer.scrollBy({
+            left: -scrollStep,
+            behavior: 'smooth'
+        });
+    });
+
+
+</script>
+</body>
+</html>
